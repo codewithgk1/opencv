@@ -1,10 +1,10 @@
 import cv2 as cv
 
 ## Reading Images
-# img = cv.imread('Resources/Photos/cat_large.jpg')
-# cv.imshow('Cat',img) 
-# cv.waitKey(0)
-# cv.destroyAllWindows()
+img = cv.imread('Resources/Photos/cat_large.jpg')
+cv.imshow('Cat',img) 
+cv.waitKey(0) 
+cv.destroyAllWindows()
 
 ## Reading Videos
 # capture = cv.VideoCapture('Resources/Videos/dog.mp4')
