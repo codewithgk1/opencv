@@ -14,12 +14,15 @@ def ChangeRes(width,height):
 
 ## Reading Videos
 capture = cv.VideoCapture('Resources/Videos/dog.mp4')
+# capture = cv.VideoCapture(0)
 while True:
     isTrue, frame = capture.read()
     frame_resized = rescaleFrame(frame)
     frame_resized_20 = rescaleFrame(frame,0.20)
+    frame_resized_50 = rescaleFrame(frame,0.50)
     cv.imshow('Video_Resized',frame_resized)
     cv.imshow('Video_Resized_20',frame_resized_20)
+    cv.imshow('Video_Resized_50',frame_resized_50)
     if cv.waitKey(20) & 0xFF == ord('d'):
         break
 
